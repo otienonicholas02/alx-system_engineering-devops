@@ -1,0 +1,63 @@
+ubuntu@230152-web-01:~/AirBnB_clone_v2$ cd 
+ubuntu@230152-web-01:~$ ls
+AirBnB_clone_v2  alx-system_engineering-devops  custom_headers  ddagent-install.log  server.pp
+ubuntu@230152-web-01:~$ cd /etc/nginx
+ubuntu@230152-web-01:/etc/nginx$ ls
+conf.d          koi-utf     modules-available  proxy_params     sites-enabled  win-utf
+fastcgi.conf    koi-win     modules-enabled    scgi_params      snippets
+fastcgi_params  mime.types  nginx.conf         sites-available  uwsgi_params
+ubuntu@230152-web-01:/etc/nginx$ vi nginx.conf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ##
+        # Virtual Host Configs
+        ##
+
+        include /etc/nginx/conf.d/*.conf;
+        include /etc/nginx/sites-enabled/*;
+}
+
+
+#mail {
+#       # See sample authentication script at:
+#       # http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript
+#
+#       # auth_http localhost/auth.php;
+#       # pop3_capabilities "TOP" "USER";
+#       # imap_capabilities "IMAP4rev1" "UIDPLUS";
+#
+#       server {
+#               listen     localhost:110;
+#               protocol   pop3;
+#               proxy      on;
+#       }
+#
+#       server {
+#               listen     localhost:143;
+#               protocol   imap;
+#               proxy      on;
+#       }
+#}
+
